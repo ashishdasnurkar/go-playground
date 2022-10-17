@@ -6,4 +6,5 @@ func main() {
 
 	fmt.Println("Hello world!")
 	fmt.Println("Hello", "world", "!")
+	fmt.Print("Hello", "world", "!")
 }
