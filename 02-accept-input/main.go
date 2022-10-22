@@ -4,6 +4,8 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strconv"
+	"strings"
 )
 
 func main() {
@@ -14,4 +16,7 @@ func main() {
 	}
 
 	fmt.Println(line)
+	line = strings.TrimSpace(line)
+	num, err := strconv.Atoi(line)
+	fmt.Printf("%d", num)
 }
