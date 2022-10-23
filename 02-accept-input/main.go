@@ -18,5 +18,13 @@ func main() {
 	fmt.Println(line)
 	line = strings.TrimSpace(line)
 	num, err := strconv.Atoi(line)
-	fmt.Printf("%d", num)
+	if err != nil {
+		panic(err)
+	}
+	fmt.Printf("%d \n", num)
+
+	var num1 int
+	fmt.Scanln(&num1)
+	fmt.Printf("Num + 5 is %d \n", num1+5)
+
 }
